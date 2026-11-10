@@ -1,0 +1,78 @@
+{
+    "$schema": "https://fundingjson.org/schema/v1.1.0.json",
+    "version": "v1.0.0",
+    "entity": {
+        "type": "individual",
+        "role": "contributor",
+        "name": "Bhawesh Bhaskar",
+        "email": "bhaskarbhawesh09@gmail.com",
+        "phone": "",
+        "description": "I am a software engineer based in India working in Python, TypeScript and Rust. Since October 2026 I have been contributing to open source projects that other developers build on, mostly data and AI infrastructure.\n\nMerged so far: LanceDB (CombinedFieldsQuery for full text search, PR 4691; ZoneMap scalar index in the Python API, PR 4816), supabase-py (realtime channel rejoin schedule, PR 1916; and PR 1885), a2a-python (Windows test fix, PR 1406) and pypa/distlib (PR 289). A bug I reported in FastMCP was fixed in PR 6012 with co-author credit.\n\nOpen and under review: LanceDB BloomFilter index for Python (PR 4877) and NGram index for Node.js (PR 4908), pypa/packaging (PR 1482), opentelemetry-python-contrib (PR 5219) and rune (or-patterns in match arms, PR 1055).\n\nI do this work unpaid alongside looking for income. A fellowship would let me spend three months on it full time.",
+        "webpageUrl": {
+            "url": "https://github.com/BHAWESHBHASKAR"
+        }
+    },
+    "projects": [
+        {
+            "guid": "lancedb",
+            "name": "LanceDB (contributor)",
+            "description": "LanceDB is an open source embedded vector database used for search and AI applications. I contribute to its Python and Node.js SDKs. My work so far exposes index types that exist in the Rust core but were missing from the SDKs: CombinedFieldsQuery (merged), ZoneMap scalar index (merged), BloomFilter scalar index (in review) and NGram index for Node.js (in review).",
+            "webpageUrl": {
+                "url": "https://github.com/lancedb/lancedb/pulls?q=is%3Apr+author%3ABHAWESHBHASKAR"
+            },
+            "repositoryUrl": {
+                "url": "https://github.com/lancedb/lancedb"
+            },
+            "licenses": ["spdx:Apache-2.0"],
+            "tags": ["database", "search", "python", "rust", "typescript"]
+        },
+        {
+            "guid": "supabase-py",
+            "name": "supabase-py (contributor)",
+            "description": "supabase-py is the official Python client for Supabase. I fixed the realtime client so channels rejoin on the stepped backoff schedule (PR 1916) and landed one earlier fix (PR 1885).",
+            "webpageUrl": {
+                "url": "https://github.com/supabase/supabase-py/pulls?q=is%3Apr+author%3ABHAWESHBHASKAR"
+            },
+            "repositoryUrl": {
+                "url": "https://github.com/supabase/supabase-py"
+            },
+            "licenses": ["spdx:MIT"],
+            "tags": ["python", "sdk", "database", "developer-tools"]
+        },
+        {
+            "guid": "python-infra",
+            "name": "Python packaging and observability (contributor)",
+            "description": "Fixes in the libraries most Python projects depend on: pypa/distlib (merged, PR 289), pypa/packaging (bounding parenthesis nesting in license expressions, PR 1482, in review) and opentelemetry-python-contrib (tornado instrumentation test, PR 5219, in review).",
+            "webpageUrl": {
+                "url": "https://github.com/pypa/packaging/pull/1482"
+            },
+            "repositoryUrl": {
+                "url": "https://github.com/pypa/packaging"
+            },
+            "licenses": ["spdx:Apache-2.0", "spdx:BSD-2-Clause"],
+            "tags": ["python", "packaging", "observability", "developer-tools"]
+        }
+    ],
+    "funding": {
+        "channels": [
+            {
+                "guid": "bank",
+                "type": "bank",
+                "address": "",
+                "description": "Direct transfer to an Indian bank account. Details shared by email."
+            }
+        ],
+        "plans": [
+            {
+                "guid": "fellowship-3-months",
+                "status": "active",
+                "name": "Three month open source contribution fellowship",
+                "description": "Rs 60,000 a month for three months of full time contribution work.\n\nMonth 1: land the two open LanceDB pull requests (BloomFilter index for Python, NGram index for Node.js) and open pull requests for the remaining index and query options that exist in the Rust core but are not yet exposed in the Python and Node.js SDKs.\n\nMonth 2: get those SDK parity pull requests merged with tests and documentation, and land the open pypa/packaging and opentelemetry-python-contrib pull requests.\n\nMonth 3: at least four further merged fixes across LanceDB, supabase-py and the Python packaging libraries, chosen from open bug reports.\n\nCommunity engagement: one written update on the FOSS United forum each month listing merged pull requests, and one talk or blog post on what a first time contributor needs to know to get a pull request merged in these projects.",
+                "amount": 180000,
+                "currency": "INR",
+                "frequency": "one-time",
+                "channels": ["bank"]
+            }
+        ]
+    }
+}
