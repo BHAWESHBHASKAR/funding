@@ -23,8 +23,16 @@
             "repositoryUrl": {
                 "url": "https://github.com/lancedb/lancedb"
             },
-            "licenses": ["spdx:Apache-2.0"],
-            "tags": ["database", "search", "python", "rust", "typescript"]
+            "licenses": [
+                "spdx:Apache-2.0"
+            ],
+            "tags": [
+                "database",
+                "search",
+                "python",
+                "rust",
+                "typescript"
+            ]
         },
         {
             "guid": "supabase-py",
@@ -36,8 +44,15 @@
             "repositoryUrl": {
                 "url": "https://github.com/supabase/supabase-py"
             },
-            "licenses": ["spdx:MIT"],
-            "tags": ["python", "sdk", "database", "developer-tools"]
+            "licenses": [
+                "spdx:MIT"
+            ],
+            "tags": [
+                "python",
+                "sdk",
+                "database",
+                "developer-tools"
+            ]
         },
         {
             "guid": "python-infra",
@@ -49,8 +64,16 @@
             "repositoryUrl": {
                 "url": "https://github.com/pypa/packaging"
             },
-            "licenses": ["spdx:Apache-2.0", "spdx:BSD-2-Clause"],
-            "tags": ["python", "packaging", "observability", "developer-tools"]
+            "licenses": [
+                "spdx:Apache-2.0",
+                "spdx:BSD-2-Clause"
+            ],
+            "tags": [
+                "python",
+                "packaging",
+                "observability",
+                "developer-tools"
+            ]
         }
     ],
     "funding": {
@@ -67,11 +90,13 @@
                 "guid": "fellowship-3-months",
                 "status": "active",
                 "name": "Three month open source contribution fellowship",
-                "description": "Rs 60,000 a month for three months of full time contribution work.\n\nMonth 1: land the two open LanceDB pull requests (BloomFilter index for Python, NGram index for Node.js) and open pull requests for the remaining index and query options that exist in the Rust core but are not yet exposed in the Python and Node.js SDKs.\n\nMonth 2: get those SDK parity pull requests merged with tests and documentation, and land the open pypa/packaging and opentelemetry-python-contrib pull requests.\n\nMonth 3: at least four further merged fixes across LanceDB, supabase-py and the Python packaging libraries, chosen from open bug reports.\n\nCommunity engagement: one written update on the FOSS United forum each month listing merged pull requests, and one talk or blog post on what a first time contributor needs to know to get a pull request merged in these projects.",
+                "description": "Rs 60,000 a month for three months of full time contribution. Month 1: land the two open LanceDB PRs (BloomFilter for Python, NGram for Node.js) and open PRs for the remaining index and query options missing from the SDKs. Month 2: get those merged with tests and docs, and land the open pypa/packaging and OpenTelemetry PRs. Month 3: four or more further merged fixes from open bug reports. Community: a monthly update on the FOSS United forum and one talk or blog post for first time contributors.",
                 "amount": 180000,
                 "currency": "INR",
                 "frequency": "one-time",
-                "channels": ["bank"]
+                "channels": [
+                    "bank"
+                ]
             }
         ]
     }
